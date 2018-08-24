@@ -1,0 +1,46 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "io.ionic.qismath"
+    }
+  }
+}

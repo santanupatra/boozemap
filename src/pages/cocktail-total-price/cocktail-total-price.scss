@@ -1,0 +1,13 @@
+page-cocktail-total-price {
+    .dark-container .item .item-inner{
+        border:none !important;
+        border-bottom:1px solid #494949 !important;
+        border-radius: 0;
+            .input-wrapper .label{
+                display: flex;
+                justify-content: space-between;
+                    p{color:#afafaf}
+                    b{font-weight: 500; color:#fff}
+            }
+    }
+}

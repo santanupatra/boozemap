@@ -1,0 +1,36 @@
+<!--
+  Generated template for the BecomecoordinatorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only color="royal" navPop>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/imgs/inner-logo.png" alt="" class="inner-logo">
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="dark-bg">
+  <div class="common-title">{{cate_name}}</div>
+  <ion-list class="common-list">
+    <ion-item *ngFor="let category of categoryArray" (click)="goProductList(category.id)">
+      <ion-avatar item-start>
+        <img src="{{link}}{{category.path}}">
+      </ion-avatar>
+      <h2>{{category.name}}</h2>
+    </ion-item>    
+  </ion-list>
+</ion-content>

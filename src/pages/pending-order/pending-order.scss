@@ -1,0 +1,39 @@
+page-pending-order {
+    .pending-top p{text-align:center; font-weight:300; margin-bottom:0; color:#999; margin-top:4px; font-size:12px}
+    .pending-top span{text-align:center; display: block; color:#fff; font-size:12px; margin-bottom:4px}
+
+    .panel-head{
+        background:#5d5d5d;
+        font-size:12px;
+        p{color:#fff; margin: 0}
+        p span{color:#ababab}
+        b{font-weight:500}
+    }
+
+    .item-details{
+        font-size:12px;
+        border-bottom:1px solid #464646;
+        ion-col{padding-top:8px; padding-bottom: 8px}
+            p{
+                margin:1px 0;
+                color:#fff
+            }
+            p.item-name{color:#78cdfe}
+            .order-box{
+                background:#555555;
+                display: block; text-align: center;
+                border:2px solid #737373;
+                padding: 7px 5px;
+                color:#fff;
+            }
+    }
+    .action-buttons{
+        margin-top:6px;
+        align-items: center;
+        a{margin-right:10px;}
+        img{width:25px;}
+    }
+    .all-info-wrapper ion-row:last-child{
+        border-bottom:0 !important;
+    }
+}

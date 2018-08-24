@@ -1,0 +1,24 @@
+page-your-cocktail {
+    .item .item-inner{border-bottom:0 !important}
+    .item .item-inner .label{display:flex; flex-wrap: nowrap; justify-content: space-between}
+    .item .item-inner .label span{min-width:80px; text-align:right; color: #dd0202; font-weight:600}
+    .item .item-inner .label h2{white-space: nowrap;text-overflow: ellipsis; overflow: hidden; color: #fff}
+    .item{
+        background: linear-gradient(#252525, #1b1b1b);
+        background: -moz-linear-gradient(#252525, #1b1b1b);
+        background: -webkit-linear-gradient(#252525, #1b1b1b);
+        border-radius: 4px;
+        border:1px solid #191919 !important;
+        margin-bottom:20px;
+        padding-left:10px;
+            ion-thumbnail{
+                min-width: 56px;
+                min-height: 56px;
+            }
+            ion-thumbnail img{
+                width: 56px;
+                height: 56px;
+                border-radius: 3px;
+            }
+        }
+}

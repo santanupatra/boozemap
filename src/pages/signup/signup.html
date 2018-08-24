@@ -1,0 +1,65 @@
+<ion-content padding class="reg-bg">
+	<div class="logo"><img src="assets/imgs/logo.png" alt=""></div>
+	<form [formGroup]="rForm" novalidate>
+	<ion-list class="log-reg-wrap">
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-user.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" placeholder="Username" formControlName="username" value="" required ></ion-input>
+		</ion-item>
+		
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-password.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="password" placeholder="Password" formControlName="password" value="" required ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-password.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="password" placeholder="Confirm password" formControlName="con_password" required (ngModelChange)="checkpassword($event,rForm.value)" ></ion-input>
+		</ion-item>
+			
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-mail.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" placeholder="Email" formControlName="email" required></ion-input>
+		</ion-item>
+		<p *ngIf="!checkEmailExist" ion-text color="danger">This email already exist. </p>
+
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-zip.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" placeholder="Zip code" formControlName="postcode" required ></ion-input>
+		</ion-item>
+		
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="assets/imgs/icon-level.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" placeholder="Level of access"></ion-input>
+		</ion-item>
+	</ion-list>
+	<p *ngIf="!passwordmatch" ion-text color="danger">Password and Confirm password not match </p>
+	<button class="mb-25 text-uppercase" ion-button color="primary" type="submit" [disabled]="!rForm.valid || !passwordmatch || !isValidEmail || !checkEmailExist" block round (click)="onSubmit(rForm.value)">Register</button>
+	<p *ngIf="!rForm.controls['postcode'].valid && rForm.controls['postcode'].touched" ion-text color="danger" >Zip Code is required </p>
+	</form>
+	<!-- <p class="text-center forgot-pass"><a href="">Forgot password?</a></p>-->
+	<p class="text-center forgot-pass" (click)="login()">Already have an account?</p> 
+</ion-content>

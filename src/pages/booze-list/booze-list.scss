@@ -1,0 +1,7 @@
+page-booze-list {
+    // .list-ios > .item-block:first-child {border-top: 0;}
+    // .list-ios > .item-block:last-child {border-bottom: 0;}
+    .common-list {background:transparent;border: 0;}
+    .common-list .item {margin-bottom:18px; border: 1px solid #141414!important; background:linear-gradient(#252525,#1b1b1b);
+    background:-webkit-linear-gradient(#252525,#1b1b1b); background:-moz-linear-gradient(#252525,#1b1b1b); border-radius: 4px;}
+}
